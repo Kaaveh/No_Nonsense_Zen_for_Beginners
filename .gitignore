@@ -1,0 +1,37 @@
+# English source material (copyrighted, never commit). Regenerate locally:
+#   pandoc ... -o no-nonsense-zen-for-beginners.md   (see tools/epub_headings.lua)
+#   python3 tools/split_book.py
+*.epub
+no-nonsense-zen-for-beginners.md
+source/
+media/images/
+
+# Quarto & build outputs
+/_book/
+/_book-mobile/
+/.quarto/
+/_freeze/
+/site_libs/
+/dist/
+*.pdf
+**/*.quarto_ipynb
+
+# LaTeX intermediates
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.tex
+!tex/*.tex
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# OS & editor
+.DS_Store
+.vscode/
+.idea/
+*.bak
