@@ -100,4 +100,4 @@ A GitHub Actions workflow running `just check` on push. `source/` is absent in C
 - [x] `tools/apparatus.py strip` then `restore` **without translating** reproduces every `source/` file's markup exactly (round-trip test over all 70 files).
 - [x] `restore` refuses when a sentinel is deleted or duplicated in the draft, and names the source line.
 - [x] `justfile` with `fix`, `check`, `split`, `translate`.
-- [ ] CI runs `just check` green on the stubs. (`.github/workflows/lint.yml`; green locally with `source/` removed, not yet run on GitHub.)
+- [x] CI runs `just check` green on the stubs (`.github/workflows/lint.yml`).
