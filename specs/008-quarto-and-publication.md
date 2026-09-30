@@ -67,7 +67,7 @@ Whatever survives must be committed, or the CI build has nothing to render.
 
 ## 3a. Internal links
 
-The EPUB's cross-references survive as `[text](#partNNNN.xhtml)` — dead targets outside the EPUB. One in `1-06` (to Part Four), four in `introduction.md`, two in `front-matter.md` (the TOC). Retarget each to the Quarto section id, or unlink it, before `quarto render`.
+The EPUB's cross-references survive as `[text](#partNNNN.xhtml)` — dead targets outside the EPUB. One in `1-06` (to Part Four), four in `introduction.md`. The two in the source's `front-matter.md` went with the legal page (spec 007). Retarget each to the Quarto section id, or unlink it, before `quarto render`.
 
 ## 4. Publication decision
 
