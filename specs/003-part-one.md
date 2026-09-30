@@ -29,12 +29,17 @@ Before scaling, run six files end to end and read the Persian critically.
 
 ### Pilot
 
-- [ ] `part-1.md` — Part opener
-- [ ] `1-01.md` — What Zen is
-- [ ] `1-02.md` — Zen and Buddhism
-- [ ] `1-03.md` — Where Zen started
-- [ ] `1-04.md` — Teacher-to-student transmission · *sidebar*
-- [ ] `1-05.md` — Important historical teachers
+- [x] `part-1.md` — Part opener
+- [x] `1-01.md` — What Zen is
+- [x] `1-02.md` — Zen and Buddhism
+- [x] `1-03.md` — Where Zen started
+- [x] `1-04.md` — Teacher-to-student transmission · *sidebar*
+- [x] `1-05.md` — Important historical teachers
+
+**Pilot findings (2026-09-30).** The pipeline holds: apparatus round-trip, sentinels and parity clean on all six. The Advanced model's Persian is fluent written prose, so no pipeline change. Two things to carry forward:
+
+- `1-04` came back from the **Classic** model on its first run — پدرسالار, «Hui-k’o» left in Latin, Latin digits, "shut down" → تعطیل می‌شویم. A re-run served Advanced. Read every draft for this before restoring.
+- The model's name and term forms drift, even within one file (Hui-k’o three ways in 1-03). Spec 002 §7 is the list to check after every run.
 
 ### Rest of Part One
 
@@ -53,7 +58,7 @@ Before scaling, run six files end to end and read the Persian critically.
 
 ## 4. Acceptance Criteria
 
-- [ ] Pilot exit conditions in §2 met, and spec 002 updated.
+- [x] Pilot exit conditions in §2 met, and spec 002 updated.
 - [ ] All 16 files `status: reviewed`.
 - [ ] `just check` clean.
 - [ ] 3 sidebars carry the settled label and a `###` title; all images restored.
