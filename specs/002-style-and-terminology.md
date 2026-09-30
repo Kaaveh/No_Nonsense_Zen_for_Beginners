@@ -37,7 +37,7 @@ The source is conversational English written for a newcomer: short sentences, se
 | Book title | `<<<TBD>>>` — candidates: «ذن بی‌حاشیه برای تازه‌کارها»، «ذن، ساده و بی‌تعارف» | open |
 | Subtitle | `<<<TBD>>>` | open |
 | Part One: Origins and History | بخش یکم: خاستگاه و تاریخ | **settled** |
-| Part Two: Core Concepts | بخش دوم: مفاهیم بنیادین | proposed |
+| Part Two: Core Concepts | بخش دوم: مفاهیم بنیادین | **settled** |
 | Part Three: Core Teachings | بخش سوم: آموزه‌های بنیادین | proposed |
 | Part Four: Core Practices | بخش چهارم: تمرین‌های بنیادین | proposed |
 | EVERYDAY ZEN (sidebar label) | ذن در زندگی روزمره | **settled** — emitted by `apparatus.py` |
@@ -62,23 +62,23 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | sangha | سانگا | Siblings 15 : 1 over سنگه | proposed |
 | zazen | زازن | "just sitting" → «فقط نشستن» (proposed). 1-07 | **settled** |
 | meditation | مراقبه | 111× in the source, the book's commonest term. Siblings 211; the model's form | **settled** |
-| sitting Zen / sitting meditation | نشستن ذن / مراقبهٔ نشسته | | proposed |
+| sitting Zen / sitting meditation | نشستن به مراقبهٔ ذن / مراقبهٔ نشسته | sitting Zen settled (2-15): "we sit Zen" → به مراقبهٔ ذن می‌نشینیم. The model writes «نشستن در ذن (مدیتیشن ذن)». sitting meditation proposed | **settled** |
 | enlightenment | روشنگری | Siblings 257 : 38 over روشن‌شدگی, and the model's form. Replaces the earlier روشن‌شدگی. Avoid اشراق (Suhrawardi connotation); the model slipped once, in 1-03 | **settled** |
 | awakening | بیداری | Kept distinct from enlightenment, as the siblings do (82) | proposed |
-| sudden / gradual enlightenment | روشنگری ناگهانی / تدریجی | | proposed |
+| sudden / gradual enlightenment | روشنگری ناگهانی / تدریجی | 2-08 | **settled** |
 | nirvana | نیروانا | Ikkyu §2.7 | **settled** |
-| karma | کارما | | proposed |
-| reincarnation / rebirth | تولد دوباره | Avoid تناسخ unless the source means transmigration specifically | proposed |
-| emptiness | تهی‌بودگی | | proposed |
-| impermanence | ناپایداری | | proposed |
+| karma | کارما | Siblings 170; the model's form (2-10) | **settled** |
+| reincarnation / rebirth | تناسخ / تولد دوباره | reincarnation settled: the source defines it as being "born again as another being" (2-11), which is transmigration. Siblings 27 : 14; the model's form. rebirth proposed | **settled** |
+| emptiness | تهی‌بودگی | Siblings 45; the model's form (2-01, 2-02) | **settled** |
+| impermanence | ناپایداری | The model's form (2-05) | **settled** |
 | suffering | رنج | 1-01, 1-02 | **settled** |
 | desire / attachment | خواهش / دلبستگی | attachment settled (1-02, 1-05); desire proposed | **settled** |
-| ego | خود / منِ نفسانی | Pick one at pilot | proposed |
-| dualistic thinking | ذهن دوگانه‌انگار | | proposed |
-| beginner's mind | ذهن نوآموز | | proposed |
-| "don't know" mind | ذهنِ «نمی‌دانم» | Kwan Um key term; always with guillemets | proposed |
+| ego | «من» (ایگو) | The source glosses ego as "what we call 'I' or 'me'" (2-10); the model's form. The gloss is tolerated on any use | **settled** |
+| dualistic thinking | تفکر دوگانه | The source says thinking, not mind; the model's form (2-05, 2-06). Drop the parenthetical glosses it adds (ثنویت‌گرا، دوتایی) | **settled** |
+| beginner's mind | ذهن مبتدی | The model's form (2-02, 2-03); siblings 1, replacing ذهن نوآموز | **settled** |
+| "don't know" mind | ذهنِ «نمی‌دانم» | Kwan Um key term; the guillemets go round «نمی‌دانم» only. "don't know" alone → «نمی‌دانم». The model writes five forms in one part (§7) | **settled** |
 | Great Doubt / Great Faith / Great Courage | شک بزرگ / ایمان بزرگ / شجاعت بزرگ | | proposed |
-| three poisons (greed, anger, ignorance) | سه زهر (آز، خشم، نادانی) | | proposed |
+| three poisons (greed, hatred, delusion) | سه زهر: طمع، نفرت، توهم (جهل) | The source's own list is greed, hatred, delusion (ignorance); the model's form (2-05) | **settled** |
 | five precepts | پنج اصل اخلاقی | The model's form (1-14), replacing پنج پیمان; the vow wording inside is «عهد می‌بندم که…» | **settled** |
 | Four Great Vows | چهار عهد بزرگ | 1-13; vow → عهد | **settled** |
 | bodhisattva | بودی‌ساتوا | Siblings' `fa/` 152, with ZWNJ (Ikkyu's table writes it without; its text does not). The model writes بودیساتوا | **settled** |
@@ -89,13 +89,15 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | Taoism / Tao | تائوئیسم / تائو | Siblings 9 : 2 over دائوئیسم; the model's form | **settled** |
 | Confucianism | کنفوسیوس‌گرایی | The model's form; siblings 6 | **settled** |
 | mantra | مانترا | | proposed |
-| retreat | دورهٔ خلوت (ریتریت) | Latin in parentheses on first use | proposed |
-| prostration(s) | سجده | | proposed |
+| retreat | دورهٔ خلوت‌گزینی (ریتریت) | The model's form (2-04, 2-08); the gloss in parentheses is the model's too, and tolerated | **settled** |
+| prostration(s) | سجده | bow → تعظیم. 2-04 | **settled** |
 | Zen master / teacher | استاد ذن / آموزگار ذن | Zen master settled (1-02); the model also uses استاد for teacher | **settled** |
 | patriarch | پاتریارک | first / second / sixth patriarch → نخستین / دومین / ششمین پاتریارک. Siblings 272; replaces the earlier «نیای ششم». The model adds a gloss in parentheses (پیشوای ارشد / معنوی) and sometimes uses پیشوا alone; the gloss is tolerated, پیشوا alone is fixed | **settled** |
 | student | شاگرد | The model's usual form; دانش‌آموز only for a schoolchild (1-11's classroom game) | **settled** |
 | Blue Cliff Record | «سوابق صخره آبی» | Ikkyu's form, and the model's (1-06) | **settled** |
 | transmission | انتقال (دارما) | dharma transmission → انتقال دارما; mind-to-mind → ذهن‌به‌ذهن | **settled** |
+| enlightened nature | ماهیت روشن‌یافته | ~30× in the source. original enlightened nature → ماهیت اصیل و روشن‌یافته. The model wrote nine variants across Parts One and Two (سرشت / طبیعت × روشن‌بینانه / روشن‌ضمیر / روشنگر); Part One revised to match. Not "nature of enlightenment" (1-05: ماهیت روشنگری, correct there) | **settled** |
+| Tao Te Ching | «دائو ته چینگ» | Siblings 33 : 7; the model writes «تائو ته چینگ» | **settled** |
 
 ---
 
@@ -119,6 +121,10 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | Seung Sahn | سونگ سان | **settled** — the model's form |
 | Kwan Um School of Zen | مکتب ذن کوان اوم | **settled** (1-13, 1-14). «کوان» here is why koan must stay «کوآن»: the model writes «کوان» for koan (1-02) |
 | Rinzai / Soto | رینزای / سوتو | **settled** — siblings, 1-05, 1-07 |
+| Lao Tzu | لائوتزو | **settled** — siblings 147; the model's form (2-10) |
+| Dae Kwang | دائه کوانگ | **settled** — the model's form in 2-14; it wrote دِه کوانگ in 2-12 |
+| Man Gong | مان گونگ | **settled** — the model's form (2-08) |
+| Empty Gate Zen Center | مرکز ذن امپتی گیت | **settled** — the model's form (2-08, 2-12) |
 | Dogen | دوگن | proposed — siblings |
 | D. T. Suzuki | دی. تی. سوزوکی | proposed — سوزوکی in Record of Linji |
 
@@ -156,7 +162,7 @@ The model's forms that §3/§4 override. Check each new `fa/` file for them befo
 
 | Model writes | Fix to |
 |--------------|--------|
-| ماهایانا / واجریانا | مهایانه / وجرایانه |
+| ماهایانا، مهایانا / واجریانا | مهایانه / وجرایانه |
 | بودیدهارما | بودی‌دارما |
 | بودیساتوا | بودی‌ساتوا |
 | مدیتیشن | مراقبه |
@@ -170,3 +176,9 @@ The model's forms that §3/§4 override. Check each new `fa/` file for them befo
 | پیشوا for patriarch, without پاتریارک | پاتریارک |
 | U+200B zero-width space (1-03 had two) | delete |
 | two ASCII spaces where the source had an em-dash aside (1-01, 1-11) | parentheses |
+| وابستگی for attachment (all of 2-07); keep it only for "depend" | دلبستگی |
+| «ذهنِ ندانستن»، ذهن «نمی‌دانم»، «ذهنِ "نمی‌دانم"»، ذهنیت «نمی‌دانم» | ذهنِ «نمی‌دانم» |
+| سرشت / طبیعت + روشن‌بینانه، روشن‌ضمیر، روشن‌بین، روشنگر (enlightened nature) | ماهیت روشن‌یافته |
+| در آیین بودا | در بودیسم |
+| مرکز ذن «پراویدنس» (Providence) | مرکز ذن پراویدنس |
+| straight "…" quotes inside a Persian sentence | «…» (nested inside «…» when quoted) |
