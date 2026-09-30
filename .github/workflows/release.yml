@@ -1,0 +1,61 @@
+# Pushing a tag renders the book and publishes it as a GitHub release.
+# Adapted from the Ikkyu book's workflow, minus its kaavehdev.ir deploy hook
+# and unversioned asset copies: this book is not on the site.
+#
+# Bump `book-version` in _quarto.yml before tagging. No release notes are
+# written here; add them with `gh release edit <tag> --notes-file …` once the
+# run is green.
+
+name: release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+
+      # Vazirmatn is committed under fonts/ and loaded by path, so TinyTeX is
+      # all the PDF needs.
+      - name: Install TinyTeX
+        run: quarto install tinytex --no-prompt
+
+      - name: Render
+        run: |
+          quarto render
+          quarto render --profile mobile --to pdf
+
+      # Same names as v1.0.0, which was cut by hand.
+      - name: Package
+        id: pkg
+        run: |
+          base=no-nonsense-zen-fa
+          v="${GITHUB_REF_NAME}"
+          mkdir dist
+          cp _book/$base.pdf               "dist/$base-$v.pdf"
+          cp _book-mobile/$base-mobile.pdf "dist/$base-$v-mobile.pdf"
+          cp _book/$base.epub              "dist/$base-$v.epub"
+          tar -czf "dist/$base-$v-html.tar.gz" -C _book .
+          echo "name=$v — $(sed -n 's/^book-version: "\(.*\)"/\1/p' _quarto.yml)" >> "$GITHUB_OUTPUT"
+
+      # The HTML bundle is meant to be served from any subdirectory, where a
+      # root-absolute path 404s.
+      - name: Bundle is relocatable
+        run: |
+          if grep -rohE '(href|src)="/[^"]*"' _book --include='*.html' | grep -q .; then
+            grep -rohE '(href|src)="/[^"]*"' _book --include='*.html' | sort -u | head
+            exit 1
+          fi
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ steps.pkg.outputs.name }}
+          files: dist/*

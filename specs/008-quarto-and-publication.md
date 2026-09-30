@@ -87,7 +87,7 @@ The EPUB's cross-references survive as `[text](#partNNNN.xhtml)` — dead target
 
 The repository is private. Publishing a translation of an in-copyright 2021 book needs the rights holder's permission. **Do not make the repo or the built book public until that is settled.** Record the outcome here.
 
-**Outcome (2026-09-30): published.** The maintainer released v1.0.0 and made the repository public. The release was cut by hand with `gh release create`; there is no release workflow yet. Add one on the Ikkyu book's model (`.github/workflows/release.yml` there) before the next version.
+**Outcome (2026-09-30): published.** The maintainer released v1.0.0 and made the repository public. v1.0.0 was cut by hand with `gh release create`. From the next version on, `.github/workflows/release.yml` (the Ikkyu book's, minus its site deploy) renders and releases on every `v*` tag: bump `book-version` in `_quarto.yml`, tag, push the tag.
 
 ---
 
