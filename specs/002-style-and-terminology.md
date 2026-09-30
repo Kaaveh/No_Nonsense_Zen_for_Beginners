@@ -35,7 +35,7 @@ The source is conversational English written for a newcomer: short sentences, se
 | Source | Proposed Persian | Status |
 |--------|------------------|--------|
 | Book title | ذن بی‌حاشیه برای تازه‌کارها | **settled** — maintainer's choice (spec 007); the model wrote «ذنِ بی‌حاشیه برای مبتدیان» |
-| Subtitle | `<<<TBD>>>` | open |
+| Subtitle: Clear Answers to Burning Questions About Core Zen Teachings | پاسخ‌های روشن به پرسش‌های داغ دربارهٔ آموزه‌های بنیادین ذن | **settled** — maintainer's choice (spec 008); «بنیادین» as in the part titles |
 | Part One: Origins and History | بخش یکم: خاستگاه و تاریخ | **settled** |
 | Part Two: Core Concepts | بخش دوم: مفاهیم بنیادین | **settled** |
 | Part Three: Core Teachings | بخش سوم: آموزه‌های بنیادین | **settled** |
@@ -175,7 +175,7 @@ Enforced by `bargardan_tools.normalize`:
 ## 6. Acceptance Criteria
 
 - [x] Register decisions in §1 settled after the pilot.
-- [ ] Book title and subtitle settled. (Title settled; subtitle open, needed only by spec 008.)
+- [x] Book title and subtitle settled.
 - [x] Every term used in the pilot files is **settled** in §3/§4.
 - [x] `[tool.book.titles]` in `pyproject.toml` filled from §2 (wording stays proposed; edit both together).
 - [x] Digits policy settled and reflected in `[tool.normalize]`.
