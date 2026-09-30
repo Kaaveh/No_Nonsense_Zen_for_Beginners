@@ -38,7 +38,7 @@ The source is conversational English written for a newcomer: short sentences, se
 | Subtitle | `<<<TBD>>>` | open |
 | Part One: Origins and History | بخش یکم: خاستگاه و تاریخ | **settled** |
 | Part Two: Core Concepts | بخش دوم: مفاهیم بنیادین | **settled** |
-| Part Three: Core Teachings | بخش سوم: آموزه‌های بنیادین | proposed |
+| Part Three: Core Teachings | بخش سوم: آموزه‌های بنیادین | **settled** |
 | Part Four: Core Practices | بخش چهارم: تمرین‌های بنیادین | proposed |
 | EVERYDAY ZEN (sidebar label) | ذن در زندگی روزمره | **settled** — emitted by `apparatus.py` |
 | What You'll Learn | آنچه خواهید آموخت | **settled** — the model's form in `part-1`; it runs into the paragraph, not a heading |
@@ -59,7 +59,7 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | Buddha | بودا | Ikkyu §2.7 | **settled** |
 | Buddhism / Buddhist | بودیسم / بودایی | Siblings 184 : 43 over آیین بودا; the model's form | **settled** |
 | dharma | دارما | Lower-case "the teaching" sense vs. capital "Dharma": same word. Ikkyu §2.7 | **settled** |
-| sangha | سانگا | Siblings 15 : 1 over سنگه | proposed |
+| sangha | سانگا | Siblings 15 : 1 over سنگه; the model's form (3-01) | **settled** |
 | zazen | زازن | "just sitting" → «فقط نشستن» (proposed). 1-07 | **settled** |
 | meditation | مراقبه | 111× in the source, the book's commonest term. Siblings 211; the model's form | **settled** |
 | sitting Zen / sitting meditation | نشستن به مراقبهٔ ذن / مراقبهٔ نشسته | sitting Zen settled (2-15): "we sit Zen" → به مراقبهٔ ذن می‌نشینیم. The model writes «نشستن در ذن (مدیتیشن ذن)». sitting meditation proposed | **settled** |
@@ -72,12 +72,15 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | emptiness | تهی‌بودگی | Siblings 45; the model's form (2-01, 2-02) | **settled** |
 | impermanence | ناپایداری | The model's form (2-05) | **settled** |
 | suffering | رنج | 1-01, 1-02 | **settled** |
-| desire / attachment | خواهش / دلبستگی | attachment settled (1-02, 1-05); desire proposed | **settled** |
+| desire / attachment | میل / دلبستگی | attachment settled (1-02, 1-05). desire → میل, the model's form throughout 3-10, replacing the proposed خواهش (siblings: Ikkyu's poems only). aspiration → آرمان (3-10) | **settled** |
 | ego | «من» (ایگو) | The source glosses ego as "what we call 'I' or 'me'" (2-10); the model's form. The gloss is tolerated on any use | **settled** |
 | dualistic thinking | تفکر دوگانه | The source says thinking, not mind; the model's form (2-05, 2-06). Drop the parenthetical glosses it adds (ثنویت‌گرا، دوتایی) | **settled** |
 | beginner's mind | ذهن مبتدی | The model's form (2-02, 2-03); siblings 1, replacing ذهن نوآموز | **settled** |
 | "don't know" mind | ذهنِ «نمی‌دانم» | Kwan Um key term; the guillemets go round «نمی‌دانم» only. "don't know" alone → «نمی‌دانم». The model writes five forms in one part (§7) | **settled** |
-| Great Doubt / Great Faith / Great Courage | شک بزرگ / ایمان بزرگ / شجاعت بزرگ | | proposed |
+| Great Doubt / Great Faith / Great Courage | شک بزرگ / ایمان بزرگ / شجاعت بزرگ | "Great" as in چهار عهد بزرگ. Only in 3-01. The model writes «شکِ عظیم» | **settled** |
+| Four Noble Truths / eightfold path | چهار حقیقت شریف / راه هشت‌گانه | Siblings; the model's forms (3-02) | **settled** |
+| interdependence | وابستگی متقابل | The model's form (3-08); وابستگی is right here, it is the "depend" sense | **settled** |
+| Bodhisattva Way | راه بودی‌ساتوا | 3-08. The model writes «طریقت بودی‌ساتوا»; طریقت is Sufi vocabulary (§1) | **settled** |
 | three poisons (greed, hatred, delusion) | سه زهر: طمع، نفرت، توهم (جهل) | The source's own list is greed, hatred, delusion (ignorance); the model's form (2-05) | **settled** |
 | five precepts | پنج اصل اخلاقی | The model's form (1-14), replacing پنج پیمان; the vow wording inside is «عهد می‌بندم که…» | **settled** |
 | Four Great Vows | چهار عهد بزرگ | 1-13; vow → عهد | **settled** |
@@ -125,6 +128,9 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | Dae Kwang | دائه کوانگ | **settled** — the model's form in 2-14; it wrote دِه کوانگ in 2-12 |
 | Man Gong | مان گونگ | **settled** — the model's form (2-08) |
 | Empty Gate Zen Center | مرکز ذن امپتی گیت | **settled** — the model's form (2-08, 2-12) |
+| Kuan Yin | کوان یین | **settled** — Wade-Giles as the source spells it (§4 note; Ikkyu §2.1, Kuang → کوانگ), and the model's form in 3-12. The siblings' گوان‌یین is Record of Linji's Pinyin |
+| Wonhyo | وونهیو | **settled** — the model's form (3-12) |
+| Jon Kabat-Zinn | جان کابات-زین | **settled** — the model's form (3-08) |
 | Dogen | دوگن | proposed — siblings |
 | D. T. Suzuki | دی. تی. سوزوکی | proposed — سوزوکی in Record of Linji |
 
@@ -182,3 +188,9 @@ The model's forms that §3/§4 override. Check each new `fa/` file for them befo
 | در آیین بودا | در بودیسم |
 | مرکز ذن «پراویدنس» (Providence) | مرکز ذن پراویدنس |
 | straight "…" quotes inside a Persian sentence | «…» (nested inside «…» when quoted) |
+| ایگو، منیت، «ایگو» (منیت) | «من» (ایگو) on first use, «من» after (2-15's pattern) |
+| «شکِ عظیم»، «ایمانِ عظیم»، «شجاعتِ عظیم» | شک / ایمان / شجاعت بزرگ |
+| هنرجو for a Zen student | شاگرد |
+| خلوت‌نشینی (ریتریت); مراقبه (ریتریت) for retreat | دورهٔ خلوت‌گزینی (ریتریت) |
+| a parenthesis the source does not have: روشنگری (نیروانا)، مراقبه (مدیتیشن)، روشن‌ضمیر (بیدار)، «ذن» (Zen)، (Zazen) | drop it |
+| [bracketed] alternative readings (3-07, 3-09) | pick the one the source means; drop the brackets |
