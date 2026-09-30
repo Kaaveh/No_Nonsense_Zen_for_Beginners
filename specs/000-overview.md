@@ -87,7 +87,7 @@ What machine translation damages in this book, and what spec 001 protects:
 | `![](media/images/…)` | 48 | Dropped, or path translated |
 | `**EVERYDAY ZEN**` | 12 | Translated inconsistently from file to file |
 | `### SIDEBAR TITLE` | 12 + 3 | `#` marks dropped; all-caps confuses the model |
-| `*italic term*` | ~12 lines | Asterisks dropped or moved |
+| `*italic term*` | 0 | None survived the EPUB conversion (Kindle italics are CSS); nothing to protect |
 
 ---
 

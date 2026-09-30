@@ -1,0 +1,29 @@
+name: lint
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lint-${{ github.ref }}
+  cancel-in-progress: true
+
+# source/ is not redistributable, so it is absent here: the round-trip test
+# and check_parity skip themselves; normalize and linebreaks still run on fa/.
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: tools/requirements.txt
+      - uses: taiki-e/install-action@just
+      - run: pip install -r tools/requirements.txt
+      - run: just check

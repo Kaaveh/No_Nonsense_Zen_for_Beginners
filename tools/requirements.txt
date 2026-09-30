@@ -1,0 +1,8 @@
+# The checkers and the sentinel engine, shared with the other books in this
+# corpus and installed from their own repository -- never vendored.
+# Pinned to a tag: tracking @main would let one bad commit there break this
+# book's CI with nothing in this history to show what changed.
+bargardan-tools @ git+https://github.com/Kaaveh/bargardan-tools@v0.2.0
+
+regex>=2024.1.0
+PyYAML>=6.0.0

@@ -50,10 +50,12 @@ A thin wrapper over `bargardan_tools.anchors`, which already does the hard part:
 
 | Source token | Sentinel | Restored as |
 |--------------|----------|-------------|
-| `![](media/images/X.jpg)` | `⟦IMG:N⟧` | The exact original line, from `source/` |
-| `**EVERYDAY ZEN**` | `⟦LABEL⟧` | The fixed Persian label from spec 002 |
-| `### TITLE` / `## Question?` / `# Part …` | leading `⟦H3⟧` / `⟦H2⟧` / `⟦H1⟧`, text left to translate | `###` / `##` / `#` + translated text |
-| `*term*` | `⟦I⟧term⟦/I⟧` | `*…*` around the translated term |
+| `![](media/images/X.jpg)` | `⟦N⟧` | The exact original line, from `source/` |
+| `**EVERYDAY ZEN**` | `⟦N⟧` | The fixed Persian label from spec 002 |
+| `## ` / `### ` | `⟦N⟧ ` (marker only, text left to translate) | `##` / `###` + translated text |
+| `# Title` in a file listed in `[tool.book.titles]` | `# ⟦N⟧` | `# ` + the Persian title from `pyproject.toml` |
+
+The engine knows only numbered sentinels, so the token kind lives in the adapter's render, not in the sentinel. The `# ` of a part title stays literal so the line is never a bare sentinel the model could fold into the next paragraph. There is no italic token: the Kindle styled italics with CSS and none survived into `source/`.
 
 Rules:
 
@@ -92,10 +94,10 @@ A GitHub Actions workflow running `just check` on push. `source/` is absent in C
 
 ## 5. Acceptance Criteria
 
-- [ ] `tools/requirements.txt` pins `bargardan-tools@v0.2.0`; a local `.venv` installs it.
-- [ ] `pyproject.toml` with `[tool.book]`, `[tool.normalize]`, `[tool.linebreaks]`.
-- [ ] `make_stubs` creates 70 `fa/*.md` stubs; `check_parity` pairs all 70.
-- [ ] `tools/apparatus.py strip` then `restore` **without translating** reproduces every `source/` file's markup exactly (round-trip test over all 70 files).
-- [ ] `restore` refuses when a sentinel is deleted or duplicated in the draft, and names the source line.
-- [ ] `justfile` with `fix`, `check`, `split`, `translate`.
-- [ ] CI runs `just check` green on the stubs.
+- [x] `tools/requirements.txt` pins `bargardan-tools@v0.2.0`; a local `.venv` installs it.
+- [x] `pyproject.toml` with `[tool.book]`, `[tool.normalize]`, `[tool.linebreaks]`.
+- [x] `make_stubs` creates 70 `fa/*.md` stubs; `check_parity` pairs all 70.
+- [x] `tools/apparatus.py strip` then `restore` **without translating** reproduces every `source/` file's markup exactly (round-trip test over all 70 files).
+- [x] `restore` refuses when a sentinel is deleted or duplicated in the draft, and names the source line.
+- [x] `justfile` with `fix`, `check`, `split`, `translate`.
+- [ ] CI runs `just check` green on the stubs. (`.github/workflows/lint.yml`; green locally with `source/` removed, not yet run on GitHub.)

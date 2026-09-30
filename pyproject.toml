@@ -1,0 +1,31 @@
+# Configuration for the bargardan-tools checkers (installed from
+# tools/requirements.txt). Config only: this project carries no copy of them.
+
+[tool.book]
+
+# The generated index of the split, not part of the book.
+exclude = ["README.md"]
+
+# Persian headings for the non-question files. make_stubs writes these into new
+# stubs and tools/apparatus.py renders each file's `# ` heading into this form,
+# so a part title can never drift between translation runs.
+# Wording is spec 002 §2, status "proposed" until the pilot settles it.
+[tool.book.titles]
+"front-matter.md" = "صفحهٔ عنوان"
+"introduction.md" = "پیش‌گفتار و راهنمای استفاده از کتاب"
+"part-1.md" = "بخش یکم: خاستگاه و تاریخ"
+"part-2.md" = "بخش دوم: مفاهیم بنیادین"
+"part-3.md" = "بخش سوم: آموزه‌های بنیادین"
+"part-4.md" = "بخش چهارم: تمرین‌های بنیادین"
+"resources.md" = "منابع برای مطالعهٔ بیشتر"
+"references.md" = "کتاب‌نامه"
+"acknowledgments.md" = "سپاس‌گزاری"
+"about-the-author.md" = "دربارهٔ نویسنده"
+
+[tool.normalize]
+# true converts Latin digits to Persian everywhere. Undecided (spec 002 §4);
+# flip and run `just fix` once it is.
+latin_digits = false
+
+[tool.linebreaks]
+abbreviations = ["Dr.", "Mr.", "Mrs.", "St.", "vs.", "e.g.", "i.e."]
