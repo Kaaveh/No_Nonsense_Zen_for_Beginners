@@ -43,22 +43,28 @@ Before scaling, run six files end to end and read the Persian critically.
 
 ### Rest of Part One
 
-- [ ] `1-06.md` — Historical Zen texts
-- [ ] `1-07.md` — Types of Zen
-- [ ] `1-08.md` — How Zen came to America · *sidebar*
-- [ ] `1-09.md` — Key common beliefs
-- [ ] `1-10.md` — Is Zen a philosophy?
-- [ ] `1-11.md` — Experience over belief
-- [ ] `1-12.md` — Worshipping the Buddha · *sidebar*
-- [ ] `1-13.md` — The Four Great Vows
-- [ ] `1-14.md` — The five precepts
-- [ ] `1-15.md` — Attaining wisdom
+- [x] `1-06.md` — Historical Zen texts
+- [x] `1-07.md` — Types of Zen
+- [x] `1-08.md` — How Zen came to America · *sidebar*
+- [x] `1-09.md` — Key common beliefs
+- [x] `1-10.md` — Is Zen a philosophy?
+- [x] `1-11.md` — Experience over belief
+- [x] `1-12.md` — Worshipping the Buddha · *sidebar*
+- [x] `1-13.md` — The Four Great Vows
+- [x] `1-14.md` — The five precepts
+- [x] `1-15.md` — Attaining wisdom
 
 ---
+
+**Rest-of-part findings.** Three more pipeline faults, all caught before commit:
+
+- **Classic again, twice.** `1-12` whole (Latin 2500, پدرسالار) — fixed by a re-run. `1-13` half: paragraphs 1–8 came back Classic on every attempt, whole or split, byte-identical each time, while paragraph 9 was Advanced. Sent alone, paragraphs 7 and 8 came back Advanced; paragraphs 1–6 stayed literal but faithful and were kept with the §7 fixes. Screen every draft: آنها without ZWNJ, Latin digits and پدرسالار are the tells.
+- **Merged paragraphs.** `1-08` (an image sentinel glued to the paragraph before it), `1-12` (two), `1-15` (one). No text lost; `restore` accepts a merge, `check_parity` catches it. Fix: split the blocks in the draft and re-run `restore`.
+- **One internal link** survived translation intact: `[part 4](#part0014.xhtml)` in `1-06`. Its target is an EPUB file id; spec 008 retargets it.
 
 ## 4. Acceptance Criteria
 
 - [x] Pilot exit conditions in §2 met, and spec 002 updated.
-- [ ] All 16 files `status: reviewed`.
-- [ ] `just check` clean.
-- [ ] 3 sidebars carry the settled label and a `###` title; all images restored.
+- [x] All 16 files `status: reviewed`.
+- [x] `just check` clean.
+- [x] 3 sidebars carry the settled label and a `###` title; all images restored.

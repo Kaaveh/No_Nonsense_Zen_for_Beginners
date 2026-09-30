@@ -11,7 +11,7 @@ Shared context, pipeline and constraints: [`000-overview.md`](./000-overview.md)
 | 000 | [Overview & Shared Context](./000-overview.md)                | —          | ✅ Done     |
 | 001 | [Tooling & Apparatus](./001-tooling.md)                       | 000        | ✅ Done     |
 | 002 | [Style & Terminology](./002-style-and-terminology.md)         | 000        | 🟡 Pilot-gated |
-| 003 | [Part One: Origins and History](./003-part-one.md) (+ pilot)  | 001, 002   | ⬜ Todo     |
+| 003 | [Part One: Origins and History](./003-part-one.md) (+ pilot)  | 001, 002   | ✅ Done     |
 | 004 | [Part Two: Core Concepts](./004-part-two.md)                  | 003        | ⬜ Todo     |
 | 005 | [Part Three: Core Teachings](./005-part-three.md)             | 003        | ⬜ Todo     |
 | 006 | [Part Four: Core Practices](./006-part-four.md)               | 003        | ⬜ Todo     |

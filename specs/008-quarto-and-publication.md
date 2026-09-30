@@ -65,6 +65,10 @@ Whatever survives must be committed, or the CI build has nothing to render.
 
 ---
 
+## 3a. Internal links
+
+The EPUB's cross-references survive as `[text](#partNNNN.xhtml)` — dead targets outside the EPUB. One in `1-06` (to Part Four), four in `introduction.md`, two in `front-matter.md` (the TOC). Retarget each to the Quarto section id, or unlink it, before `quarto render`.
+
 ## 4. Publication decision
 
 The repository is private. Publishing a translation of an in-copyright 2021 book needs the rights holder's permission. **Do not make the repo or the built book public until that is settled.** Record the outcome here.
@@ -78,3 +82,4 @@ The repository is private. Publishing a translation of an in-copyright 2021 book
 - [ ] `quarto render` produces HTML, PDF and EPUB locally without warnings.
 - [ ] Image policy in §3 applied; no unlicensed image committed.
 - [ ] Publication rights recorded in §4 before any public release.
+- [ ] No `#part….xhtml` link left in `fa/` (§3a).
