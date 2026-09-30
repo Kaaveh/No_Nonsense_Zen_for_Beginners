@@ -34,7 +34,7 @@ The source is conversational English written for a newcomer: short sentences, se
 
 | Source | Proposed Persian | Status |
 |--------|------------------|--------|
-| Book title | `<<<TBD>>>` — candidates: «ذن بی‌حاشیه برای تازه‌کارها»، «ذن، ساده و بی‌تعارف» | open |
+| Book title | ذن بی‌حاشیه برای تازه‌کارها | **settled** — maintainer's choice (spec 007); the model wrote «ذنِ بی‌حاشیه برای مبتدیان» |
 | Subtitle | `<<<TBD>>>` | open |
 | Part One: Origins and History | بخش یکم: خاستگاه و تاریخ | **settled** |
 | Part Two: Core Concepts | بخش دوم: مفاهیم بنیادین | **settled** |
@@ -42,9 +42,10 @@ The source is conversational English written for a newcomer: short sentences, se
 | Part Four: Core Practices | بخش چهارم: تمرین‌های بنیادین | **settled** |
 | EVERYDAY ZEN (sidebar label) | ذن در زندگی روزمره | **settled** — emitted by `apparatus.py` |
 | What You'll Learn | آنچه خواهید آموخت | **settled** — the model's form in `part-1`; it runs into the paragraph, not a heading |
-| Introduction and How to Use This Book | پیش‌گفتار و راهنمای استفاده از کتاب | proposed |
-| Resources / References | منابع برای مطالعهٔ بیشتر / کتاب‌نامه | proposed |
-| Acknowledgments / About the Author | سپاس‌گزاری / دربارهٔ نویسنده | proposed |
+| Introduction and How to Use This Book | پیش‌گفتار و راهنمای استفاده از کتاب | **settled** |
+| Resources / References | منابع برای مطالعهٔ بیشتر / کتاب‌نامه | **settled** |
+| Acknowledgments / About the Author | سپاس‌گزاری / دربارهٔ نویسنده | **settled** |
+| "Everyday Zen" in running text | «ذن در زندگی روزمره» | **settled** — the label's form (introduction); the model wrote «ذنِ روزمره» (Everyday Zen) |
 
 Headings keep sentence case in Persian; the source's ALL CAPS is typographic, not meaning.
 
@@ -110,6 +111,10 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | transmission | انتقال (دارما) | dharma transmission → انتقال دارما; mind-to-mind → ذهن‌به‌ذهن | **settled** |
 | enlightened nature | ماهیت روشن‌یافته | ~30× in the source. original enlightened nature → ماهیت اصیل و روشن‌یافته. The model wrote nine variants across Parts One and Two (سرشت / طبیعت × روشن‌بینانه / روشن‌ضمیر / روشنگر); Part One revised to match. Not "nature of enlightenment" (1-05: ماهیت روشنگری, correct there) | **settled** |
 | Tao Te Ching | «دائو ته چینگ» | Siblings 33 : 7; the model writes «تائو ته چینگ» | **settled** |
+| abbot / vice abbot (of a Zen center) | رئیس مرکز / معاون رئیس | 1-05's «رئیس صومعه» for a monastery; the model wrote «راهب اعظم» (about-the-author) | **settled** |
+| Kyol Che (retreat) | «کیول چه» | The model's form (about-the-author) | **settled** |
+| inka | «اینکا» | The model's form; the source glosses it itself | **settled** |
+| sitting group | گروه مراقبهٔ نشسته | The model wrote «گروه نشسته» | **settled** |
 
 ---
 
@@ -142,6 +147,10 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | Jon Kabat-Zinn | جان کابات-زین | **settled** — the model's form (3-08) |
 | Pai Chang (Pai-chang) | پای-چانگ | **settled** — siblings 19; the model writes «پای‌چانگ» (4-02) |
 | Chao-chou | چائو-چو | **settled** — siblings 10, and the model's form (4-10) |
+| Jason Quinn (the author) | جیسون کویین | **settled** — spec 008's form; the model writes جیسون کوین |
+| Bon Soeng | بون سونگ | **settled** — the model's form (acknowledgments) |
+| Kendra / Myles / Ella | کندرا / مایلز / اِلا | **settled** — dedication |
+| Thubten Chodron | توبتن (چودرون) | **settled** — the model's form; the author line itself stays in English (spec 007) |
 | Dogen | دوگن | proposed — siblings |
 | D. T. Suzuki | دی. تی. سوزوکی | proposed — سوزوکی in Record of Linji |
 
@@ -166,7 +175,7 @@ Enforced by `bargardan_tools.normalize`:
 ## 6. Acceptance Criteria
 
 - [x] Register decisions in §1 settled after the pilot.
-- [ ] Book title and subtitle settled.
+- [ ] Book title and subtitle settled. (Title settled; subtitle open, needed only by spec 008.)
 - [x] Every term used in the pilot files is **settled** in §3/§4.
 - [x] `[tool.book.titles]` in `pyproject.toml` filled from §2 (wording stays proposed; edit both together).
 - [x] Digits policy settled and reflected in `[tool.normalize]`.
