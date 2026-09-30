@@ -14,7 +14,7 @@ Shared context, pipeline and constraints: [`000-overview.md`](./000-overview.md)
 | 003 | [Part One: Origins and History](./003-part-one.md) (+ pilot)  | 001, 002   | ✅ Done     |
 | 004 | [Part Two: Core Concepts](./004-part-two.md)                  | 003        | ✅ Done     |
 | 005 | [Part Three: Core Teachings](./005-part-three.md)             | 003        | ✅ Done     |
-| 006 | [Part Four: Core Practices](./006-part-four.md)               | 003        | ⬜ Todo     |
+| 006 | [Part Four: Core Practices](./006-part-four.md)               | 003        | ✅ Done     |
 | 007 | [Front & Back Matter](./007-front-and-back-matter.md)         | 003–006    | ⬜ Todo     |
 | 008 | [Quarto & Publication](./008-quarto-and-publication.md)       | 007        | ⬜ Todo     |
 
