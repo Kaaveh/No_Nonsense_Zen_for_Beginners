@@ -23,8 +23,8 @@ exclude = ["README.md"]
 "about-the-author.md" = "دربارهٔ نویسنده"
 
 [tool.normalize]
-# true converts Latin digits to Persian everywhere. Undecided (spec 002 §4);
-# flip and run `just fix` once it is.
+# false = do not rewrite digits in either direction. Prose digits are Persian
+# anyway: the Advanced model persianises them unprompted (spec 002 §5).
 latin_digits = false
 
 [tool.linebreaks]
