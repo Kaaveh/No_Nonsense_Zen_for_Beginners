@@ -60,7 +60,7 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | Buddhism / Buddhist | بودیسم / بودایی | Siblings 184 : 43 over آیین بودا; the model's form | **settled** |
 | dharma | دارما | Lower-case "the teaching" sense vs. capital "Dharma": same word. Ikkyu §2.7 | **settled** |
 | sangha | سانگا | Siblings 15 : 1 over سنگه | proposed |
-| zazen | زازن | "just sitting" → «فقط نشستن» | proposed |
+| zazen | زازن | "just sitting" → «فقط نشستن» (proposed). 1-07 | **settled** |
 | meditation | مراقبه | 111× in the source, the book's commonest term. Siblings 211; the model's form | **settled** |
 | sitting Zen / sitting meditation | نشستن ذن / مراقبهٔ نشسته | | proposed |
 | enlightenment | روشنگری | Siblings 257 : 38 over روشن‌شدگی, and the model's form. Replaces the earlier روشن‌شدگی. Avoid اشراق (Suhrawardi connotation); the model slipped once, in 1-03 | **settled** |
@@ -79,11 +79,11 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | "don't know" mind | ذهنِ «نمی‌دانم» | Kwan Um key term; always with guillemets | proposed |
 | Great Doubt / Great Faith / Great Courage | شک بزرگ / ایمان بزرگ / شجاعت بزرگ | | proposed |
 | three poisons (greed, anger, ignorance) | سه زهر (آز، خشم، نادانی) | | proposed |
-| five precepts | پنج پیمان | | proposed |
-| Four Great Vows | چهار عهد بزرگ | | proposed |
-| bodhisattva | بودی‌ساتوا | Siblings' `fa/` 152, with ZWNJ (Ikkyu's table writes it without; its text does not) | proposed |
+| five precepts | پنج اصل اخلاقی | The model's form (1-14), replacing پنج پیمان; the vow wording inside is «عهد می‌بندم که…» | **settled** |
+| Four Great Vows | چهار عهد بزرگ | 1-13; vow → عهد | **settled** |
+| bodhisattva | بودی‌ساتوا | Siblings' `fa/` 152, with ZWNJ (Ikkyu's table writes it without; its text does not). The model writes بودیساتوا | **settled** |
 | Buddha-nature | طبیعت بودایی | Siblings split (طبیعت بودا 17، سرشت بودا 14، طبیعت بودایی 14); the model's form in 1-03 | **settled** |
-| sutra | سوترا | Ikkyu §2.7. Diamond Sutra → سوترای الماس (settled, 1-05); Heart Sutra → سوترای دل (proposed) | **settled** |
+| sutra | سوترا | Ikkyu §2.7. Diamond / Heart / Platform Sutra → سوترای الماس / سوترای قلب / سوترای سکو (settled, 1-05, 1-06; the model's forms, replacing سوترای دل) | **settled** |
 | Mahayana / Theravada / Vajrayana | مهایانه / تراوادا / وجرایانه | Siblings write مهایانه (73) and never ماهایانه. **The model writes ماهایانا / واجریانا — fix by hand** | **settled** |
 | Chan (Chinese Zen) | چان | Siblings. The model wrote «چَن» in 1-01 | **settled** |
 | Taoism / Tao | تائوئیسم / تائو | Siblings 9 : 2 over دائوئیسم; the model's form | **settled** |
@@ -93,6 +93,8 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | prostration(s) | سجده | | proposed |
 | Zen master / teacher | استاد ذن / آموزگار ذن | Zen master settled (1-02); the model also uses استاد for teacher | **settled** |
 | patriarch | پاتریارک | first / second / sixth patriarch → نخستین / دومین / ششمین پاتریارک. Siblings 272; replaces the earlier «نیای ششم». The model adds a gloss in parentheses (پیشوای ارشد / معنوی) and sometimes uses پیشوا alone; the gloss is tolerated, پیشوا alone is fixed | **settled** |
+| student | شاگرد | The model's usual form; دانش‌آموز only for a schoolchild (1-11's classroom game) | **settled** |
+| Blue Cliff Record | «سوابق صخره آبی» | Ikkyu's form, and the model's (1-06) | **settled** |
 | transmission | انتقال (دارما) | dharma transmission → انتقال دارما; mind-to-mind → ذهن‌به‌ذهن | **settled** |
 
 ---
@@ -106,13 +108,17 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | Hui-k’o | هویی-ک’و | **settled** — Ikkyu §2.2. The model wrote three forms in one file |
 | Shen-hsiu | شن-شیو | **settled** — model writes شِن‌شیو |
 | Lin-chi | لین-چی | **settled** — Ikkyu's form; Record of Linji's لینجی is Pinyin. Model writes لین‌چی |
+| Huai-jang | هوآی-جانگ | **settled** — Lin-chi's form; model writes هوآی‌جانگ |
+| Ma-tzu | ما-تسو | **settled** — siblings' Ma-tsu; model writes ما-تزو |
+| Te-shan / Hsueh-tou / Yuan-wu | ته-شان / شوئه-تو / یوان-وو | **settled** — Ikkyu §2.8 |
+| Providence Zen Center | مرکز ذن پراویدنس | **settled** — the model's form |
 | Mahakasyapa | ماهاکاشیاپا | **settled** — Record of Linji, and the model's form |
 | Emperor Wu (of Liang) | امپراتور وو (از دودمان لیانگ) | **settled** — siblings, and the model's form |
 | Vulture Peak | قلهٔ کرکس | **settled** — Record of Linji, and the model's form |
 | Shaolin Monastery | صومعهٔ شائولین | **settled** — the model's form |
 | Seung Sahn | سونگ سان | **settled** — the model's form |
-| Kwan Um School of Zen | مکتب ذن کوان اوم | proposed. «کوان» here is why koan must stay «کوآن»: the model writes «کوان» for koan (1-02) |
-| Rinzai / Soto | رینزای / سوتو | Rinzai **settled** (1-05); Soto proposed — siblings |
+| Kwan Um School of Zen | مکتب ذن کوان اوم | **settled** (1-13, 1-14). «کوان» here is why koan must stay «کوآن»: the model writes «کوان» for koan (1-02) |
+| Rinzai / Soto | رینزای / سوتو | **settled** — siblings, 1-05, 1-07 |
 | Dogen | دوگن | proposed — siblings |
 | D. T. Suzuki | دی. تی. سوزوکی | proposed — سوزوکی in Record of Linji |
 
@@ -152,9 +158,15 @@ The model's forms that §3/§4 override. Check each new `fa/` file for them befo
 |--------------|--------|
 | ماهایانا / واجریانا | مهایانه / وجرایانه |
 | بودیدهارما | بودی‌دارما |
+| بودیساتوا | بودی‌ساتوا |
+| مدیتیشن | مراقبه |
+| روشن‌شدگی، اشراق (often in parentheses after روشنگری or بیداری) | روشنگری; drop the parenthesis |
+| طبیعت بودا، سرشت بودا | طبیعت بودایی |
+| دانش‌آموز for a Zen student | شاگرد |
 | «کوان» (koan) | «کوآن» |
-| هوی‌نِنگ، هوی-کو، شِن‌شیو، لین‌چی — any Wade-Giles name with ZWNJ or kasre | hyphen, no kasre (§4) |
+| هوی‌نِنگ، هوی-کو، شِن‌شیو، لین‌چی، هوآی‌جانگ، ته‌شان — any Wade-Giles name with ZWNJ or kasre | hyphen, no kasre (§4) |
+| ما-تزو | ما-تسو |
 | اشراق | روشنگری |
 | پیشوا for patriarch, without پاتریارک | پاتریارک |
 | U+200B zero-width space (1-03 had two) | delete |
-| two ASCII spaces where the source had an em-dash aside (1-01) | parentheses |
+| two ASCII spaces where the source had an em-dash aside (1-01, 1-11) | parentheses |
