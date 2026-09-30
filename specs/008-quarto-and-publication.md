@@ -63,23 +63,39 @@ dir: rtl
 
 Whatever survives must be committed, or the CI build has nothing to render.
 
+**Applied (2026-09-30).** Nothing survives. All nine images are the publisher's, so none is committed and `fa/` keeps its `![](media/images/…)` lines for block parity. `tex/ornaments.lua` drops them at render time in every format, so the build never reads `media/images/`.
+
+| Image | What it is | In the build |
+|-------|-----------|--------------|
+| VZ, W1 | Cover, title page | dropped: Quarto's own title page stands in |
+| W0, W6 | Bonsai at part ends, seated Buddha after the 4-13 meditation how-to | dropped: decoration |
+| W2, W4 | Thin rules under headings | dropped |
+| W3, W5 | Buddha icon opening each sidebar, bonsai closing it | a horizontal rule, so each story still has edges |
+| W7 | Author photo | dropped: no permission |
+
+A Persian cover is not made. Add one when the book is to be released.
+
 ---
 
 ## 3a. Internal links
 
 The EPUB's cross-references survive as `[text](#partNNNN.xhtml)` — dead targets outside the EPUB. One in `1-06` (to Part Four), four in `introduction.md`. The two in the source's `front-matter.md` went with the legal page (spec 007). Retarget each to the Quarto section id, or unlink it, before `quarto render`.
 
+**Done.** All five now point at the part file (`[بخش اول](part-1.md)`). Quarto rewrites that per format: `part-1.html` on the web and an internal link in the PDF and EPUB.
+
 ## 4. Publication decision
 
 The repository is private. Publishing a translation of an in-copyright 2021 book needs the rights holder's permission. **Do not make the repo or the built book public until that is settled.** Record the outcome here.
+
+**Outcome (2026-09-30): not settled.** No permission has been sought or granted. The repo stays private, the book is built locally only (`just build`), and there is no release workflow. When permission arrives, record it here, then add a tag-triggered release on the Ikkyu book's model (`.github/workflows/release.yml` there).
 
 ---
 
 ## 5. Acceptance Criteria
 
-- [ ] `_quarto.yml` lists all 70 files in book order.
-- [ ] `index.md` with Persian overview, version and licence.
-- [ ] `quarto render` produces HTML, PDF and EPUB locally without warnings.
-- [ ] Image policy in §3 applied; no unlicensed image committed.
-- [ ] Publication rights recorded in §4 before any public release.
-- [ ] No `#part….xhtml` link left in `fa/` (§3a).
+- [x] `_quarto.yml` lists all 70 files in book order.
+- [x] `index.md` with Persian overview, version and licence.
+- [x] `quarto render` produces HTML, PDF and EPUB locally without warnings.
+- [x] Image policy in §3 applied; no unlicensed image committed.
+- [x] Publication rights recorded in §4 before any public release. (Unsettled: no public release.)
+- [x] No `#part….xhtml` link left in `fa/` (§3a).

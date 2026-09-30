@@ -1,0 +1,167 @@
+# Book build. One source tree, three outputs. Adapted from the Ikkyu book,
+# which carries the reasoning behind most of what follows (spec 008 §1).
+#
+# Title and subtitle: spec 002 §2. The chapter list mirrors source/README.md;
+# if the split ever changes, regenerate both together.
+
+book-version: "نسخهٔ ۱.۰.۰"
+
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "ذن بی‌حاشیه برای تازه‌کارها"
+  subtitle: "پاسخ‌های روشن به پرسش‌های داغ دربارهٔ آموزه‌های بنیادین ذن"
+  author:
+    - "جیسون کویین"
+    - "برگردان: کاوه"
+  # Otherwise the PDF and EPUB are named after the Persian title.
+  output-file: no-nonsense-zen-fa
+  repo-url: https://github.com/Kaaveh/No_Nonsense_Zen_for_Beginners
+  repo-branch: main
+  repo-actions: [edit, issue]
+  downloads: [pdf, epub]
+  search: true
+
+  sidebar:
+    style: docked
+    collapse-level: 1
+
+  chapters:
+    - index.md
+    - fa/front-matter.md
+    - fa/introduction.md
+    - part: fa/part-1.md
+      chapters:
+        - fa/1-01.md
+        - fa/1-02.md
+        - fa/1-03.md
+        - fa/1-04.md
+        - fa/1-05.md
+        - fa/1-06.md
+        - fa/1-07.md
+        - fa/1-08.md
+        - fa/1-09.md
+        - fa/1-10.md
+        - fa/1-11.md
+        - fa/1-12.md
+        - fa/1-13.md
+        - fa/1-14.md
+        - fa/1-15.md
+    - part: fa/part-2.md
+      chapters:
+        - fa/2-01.md
+        - fa/2-02.md
+        - fa/2-03.md
+        - fa/2-04.md
+        - fa/2-05.md
+        - fa/2-06.md
+        - fa/2-07.md
+        - fa/2-08.md
+        - fa/2-09.md
+        - fa/2-10.md
+        - fa/2-11.md
+        - fa/2-12.md
+        - fa/2-13.md
+        - fa/2-14.md
+        - fa/2-15.md
+    - part: fa/part-3.md
+      chapters:
+        - fa/3-01.md
+        - fa/3-02.md
+        - fa/3-03.md
+        - fa/3-04.md
+        - fa/3-05.md
+        - fa/3-06.md
+        - fa/3-07.md
+        - fa/3-08.md
+        - fa/3-09.md
+        - fa/3-10.md
+        - fa/3-11.md
+        - fa/3-12.md
+        - fa/3-13.md
+        - fa/3-14.md
+        - fa/3-15.md
+    - part: fa/part-4.md
+      chapters:
+        - fa/4-01.md
+        - fa/4-02.md
+        - fa/4-03.md
+        - fa/4-04.md
+        - fa/4-05.md
+        - fa/4-06.md
+        - fa/4-07.md
+        - fa/4-08.md
+        - fa/4-09.md
+        - fa/4-10.md
+        - fa/4-11.md
+        - fa/4-12.md
+        - fa/4-13.md
+        - fa/4-14.md
+        - fa/4-15.md
+    - fa/resources.md
+    - fa/references.md
+    - fa/acknowledgments.md
+    - fa/about-the-author.md
+
+# fa-IR, not fa: a bare `fa` collides with the fa/ directory and Quarto emits
+# lang="../fa" on every chapter page. Pandoc still maps fa-IR to babel persian.
+lang: fa-IR
+dir: rtl
+
+# Quarto has no fa locale; without this the chrome renders in English.
+language: _language.yml
+
+# The questions carry no numbers of their own, but numbering 60 questions
+# "۱.۳" under their part adds nothing a reader asked for.
+number-sections: false
+
+# Every image in fa/ is the publisher's artwork and none is committed (spec 008
+# §3). This drops them at render time; fa/ keeps them for block parity.
+filters: [tex/ornaments.lua]
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    respect-user-color-scheme: true
+    css: assets/rtl.css
+    toc: true
+    toc-depth: 2
+    toc-title: "در این بخش"
+    link-external-newwindow: true
+
+  pdf:
+    # LuaLaTeX, not XeLaTeX: see tex/preamble.tex.
+    pdf-engine: lualatex
+    documentclass: book
+    toc-depth: 1
+    # Most answers are two or three pages; openright would leave a blank verso
+    # after half of them.
+    classoption: [openany]
+    mainfont: "Vazirmatn-Regular.ttf"
+    mainfontoptions:
+      - Path=fonts/
+      - BoldFont=Vazirmatn-Bold.ttf
+      - Renderer=Harfbuzz
+    fontsize: 12pt
+    geometry:
+      - top=25mm
+      - bottom=25mm
+      - inner=28mm
+      - outer=22mm
+    include-in-header: tex/preamble.tex
+    colorlinks: true
+
+  epub:
+    # Pandoc does not derive either of these from `dir` (Ikkyu spec 007).
+    page-progression-direction: rtl
+    variables:
+      dir: rtl
+    epub-fonts:
+      - fonts/Vazirmatn-Regular.ttf
+      - fonts/Vazirmatn-Bold.ttf
+    css: assets/epub.css
+    toc-depth: 1

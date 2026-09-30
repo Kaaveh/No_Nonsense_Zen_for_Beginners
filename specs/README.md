@@ -16,7 +16,7 @@ Shared context, pipeline and constraints: [`000-overview.md`](./000-overview.md)
 | 005 | [Part Three: Core Teachings](./005-part-three.md)             | 003        | ✅ Done     |
 | 006 | [Part Four: Core Practices](./006-part-four.md)               | 003        | ✅ Done     |
 | 007 | [Front & Back Matter](./007-front-and-back-matter.md)         | 003–006    | ✅ Done     |
-| 008 | [Quarto & Publication](./008-quarto-and-publication.md)       | 007        | ⬜ Todo     |
+| 008 | [Quarto & Publication](./008-quarto-and-publication.md)       | 007        | ✅ Done     |
 
 ## Recommended Execution Order
 

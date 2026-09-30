@@ -1,0 +1,55 @@
+% Persian print preamble. Loaded via `include-in-header` from _quarto.yml.
+%
+% ENGINE: LuaLaTeX, not XeLaTeX.
+%
+% This was settled empirically in the sibling Lin-chi book. Under XeLaTeX, pandoc's
+% template selects `\usepackage[bidi=default]{babel}`, which delegates to the
+% `bidi` package. Its bidirectional handling is heuristic rather than a real
+% implementation of the Unicode Bidirectional Algorithm, and it reverses the
+% word order of Latin-script runs embedded in Persian text: "semantic line
+% breaks" typeset as "breaks line semantic". This book carries a Latin
+% gloss -- (Platform Sutra), (koan) -- in most paragraphs.
+%
+% Under LuaLaTeX the same template selects `bidi=basic`, which is a real UBA
+% implementation, and the problem disappears. xepersian was also tried and
+% rejected: it collides with babel's `persian` (already active via the
+% `persian` documentclass option pandoc emits from `lang: fa`) and with
+% pandoc's `longtable,booktabs,array` load order, and it rides the same `bidi`
+% package anyway.
+%
+% Cost of the choice: LuaLaTeX is roughly 2-3x slower per pass than XeLaTeX,
+% and Quarto runs two passes.
+
+% Persian digits for every LaTeX counter: chapter, section, page, footnote.
+% `maparabic` redefines \arabic only, so digits the translator actually typed
+% are left exactly as written -- a Latin-digit year stays Latin.
+\babelprovide[import, main, maparabic]{persian}
+
+% Pandoc loads selnolig unconditionally under LuaTeX. It is an English/German
+% ligature-suppression package; its Lua callback dies on Persian glyphs with
+% "bad argument #1 to 'char'" and aborts the run with no `!` line in the log,
+% which makes it painful to diagnose. Turn it off. The \providecommand guard
+% keeps this file harmless if the engine ever changes back.
+\providecommand{\selnoligoff}{}
+\selnoligoff
+
+% Title page: the translator's line under the author's, not beside it. Pandoc
+% joins the `author:` list with \and, which \maketitle sets as side-by-side
+% columns; the author block is a one-column tabular, so \\ gives a row each.
+\renewcommand{\and}{\\[1ex]}
+
+% No line break at a hyphen. A Latin run broken there puts the
+% hyphen on the wrong side at the end of an RTL line: "(Tung-shan's" typeset as
+% "(-Tung" / "shan's". Same for LaTeX's own hyphenation of Latin words
+% ("Wash-ington"). Persian is never hyphenated, so this costs nothing there.
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+% Even leading. A line carrying a damma or kasra is taller than
+% \baselineskip allows for, and TeX then pushes it down by \lineskip, opening
+% a gap mid-paragraph. Keep every baseline on the grid instead.
+\lineskiplimit=-\maxdimen
+
+% ...except on the title page, where the author and translator are two rows of one
+% tabular: under the rule above the second row printed over the first.
+\AddToHook{env/titlepage/begin}{\lineskiplimit=0pt}

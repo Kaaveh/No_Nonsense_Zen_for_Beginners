@@ -3,6 +3,7 @@
 #     just check              # everything that must pass before a commit
 #     just fix                # the corrections that can be made automatically
 #     just translate 1-04     # one file through the whole pipeline (000 §3)
+#     just build              # HTML, PDF (desktop and mobile), EPUB  (008)
 
 py := if path_exists(".venv/bin/python") == "true" { ".venv/bin/python" } else { "python3" }
 gt := env("GT", home_directory() / "Project/Backend/gTranslator")
@@ -45,3 +46,18 @@ venv:
     python3 -m venv .venv
     .venv/bin/pip install --upgrade pip
     .venv/bin/pip install -r tools/requirements.txt
+
+# HTML, PDF (desktop and mobile) and EPUB. Spec 008.
+build:
+    quarto render
+    quarto render --profile mobile --to pdf
+
+# The phone edition: a 90x160mm page, in _book-mobile/. See _quarto-mobile.yml.
+pdf-mobile:
+    quarto render --profile mobile --to pdf
+
+serve:
+    quarto preview --port 4200
+
+clean:
+    rm -rf _book _book-mobile .quarto
