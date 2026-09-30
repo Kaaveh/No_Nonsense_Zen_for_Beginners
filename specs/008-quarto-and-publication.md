@@ -87,7 +87,7 @@ The EPUB's cross-references survive as `[text](#partNNNN.xhtml)` — dead target
 
 The repository is private. Publishing a translation of an in-copyright 2021 book needs the rights holder's permission. **Do not make the repo or the built book public until that is settled.** Record the outcome here.
 
-**Outcome (2026-09-30): not settled.** No permission has been sought or granted. The repo stays private, the book is built locally only (`just build`), and there is no release workflow. When permission arrives, record it here, then add a tag-triggered release on the Ikkyu book's model (`.github/workflows/release.yml` there).
+**Outcome (2026-09-30): published.** The maintainer released v1.0.0 and made the repository public. The release was cut by hand with `gh release create`; there is no release workflow yet. Add one on the Ikkyu book's model (`.github/workflows/release.yml` there) before the next version.
 
 ---
 
@@ -97,5 +97,5 @@ The repository is private. Publishing a translation of an in-copyright 2021 book
 - [x] `index.md` with Persian overview, version and licence.
 - [x] `quarto render` produces HTML, PDF and EPUB locally without warnings.
 - [x] Image policy in §3 applied; no unlicensed image committed.
-- [x] Publication rights recorded in §4 before any public release. (Unsettled: no public release.)
+- [x] Publication rights recorded in §4 before any public release. (Published by the maintainer's decision, 2026-09-30.)
 - [x] No `#part….xhtml` link left in `fa/` (§3a).
