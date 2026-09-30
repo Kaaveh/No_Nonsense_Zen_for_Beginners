@@ -39,7 +39,7 @@ The source is conversational English written for a newcomer: short sentences, se
 | Part One: Origins and History | بخش یکم: خاستگاه و تاریخ | **settled** |
 | Part Two: Core Concepts | بخش دوم: مفاهیم بنیادین | **settled** |
 | Part Three: Core Teachings | بخش سوم: آموزه‌های بنیادین | **settled** |
-| Part Four: Core Practices | بخش چهارم: تمرین‌های بنیادین | proposed |
+| Part Four: Core Practices | بخش چهارم: تمرین‌های بنیادین | **settled** |
 | EVERYDAY ZEN (sidebar label) | ذن در زندگی روزمره | **settled** — emitted by `apparatus.py` |
 | What You'll Learn | آنچه خواهید آموخت | **settled** — the model's form in `part-1`; it runs into the paragraph, not a heading |
 | Introduction and How to Use This Book | پیش‌گفتار و راهنمای استفاده از کتاب | proposed |
@@ -62,7 +62,7 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | sangha | سانگا | Siblings 15 : 1 over سنگه; the model's form (3-01) | **settled** |
 | zazen | زازن | "just sitting" → «فقط نشستن» (proposed). 1-07 | **settled** |
 | meditation | مراقبه | 111× in the source, the book's commonest term. Siblings 211; the model's form | **settled** |
-| sitting Zen / sitting meditation | نشستن به مراقبهٔ ذن / مراقبهٔ نشسته | sitting Zen settled (2-15): "we sit Zen" → به مراقبهٔ ذن می‌نشینیم. The model writes «نشستن در ذن (مدیتیشن ذن)». sitting meditation proposed | **settled** |
+| sitting Zen / sitting meditation | نشستن به مراقبهٔ ذن / مراقبهٔ نشسته | sitting Zen settled (2-15): "we sit Zen" → به مراقبهٔ ذن می‌نشینیم. The model writes «نشستن در ذن (مدیتیشن ذن)». sitting meditation settled (4-01, 4-13); the model writes «مدیتیشن نشسته» | **settled** |
 | enlightenment | روشنگری | Siblings 257 : 38 over روشن‌شدگی, and the model's form. Replaces the earlier روشن‌شدگی. Avoid اشراق (Suhrawardi connotation); the model slipped once, in 1-03 | **settled** |
 | awakening | بیداری | Kept distinct from enlightenment, as the siblings do (82) | proposed |
 | sudden / gradual enlightenment | روشنگری ناگهانی / تدریجی | 2-08 | **settled** |
@@ -91,7 +91,16 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | Chan (Chinese Zen) | چان | Siblings. The model wrote «چَن» in 1-01 | **settled** |
 | Taoism / Tao | تائوئیسم / تائو | Siblings 9 : 2 over دائوئیسم; the model's form | **settled** |
 | Confucianism | کنفوسیوس‌گرایی | The model's form; siblings 6 | **settled** |
-| mantra | مانترا | | proposed |
+| mantra | مانترا | The model's form (4-01, 4-02) | **settled** |
+| chanting / chant | ذکر | ~24× in Part Four. The model's form throughout 4-02 and 4-04; chanting meditation → مراقبه با ذکر. Drop its glosses (ذکرخوانی (چنتینگ)، (chanting)) and «سرودها و اذکار» (4-12) | **settled** |
+| shikantaza | شیکانتازا | The model writes it with and without ZWNJ (4-01, 4-02); one word, no ZWNJ | **settled** |
+| walking meditation | مراقبهٔ راه رفتن | 4-02, 4-14; the model writes «مدیتیشن پیاده‌روی» | **settled** |
+| meditation cushion | بالشتک (بالشتکِ مراقبه) | Parts One–Three's form; the model writes تشکچه in 4-13, 4-14 | **settled** |
+| working Zen | ذنِ کار | 4-02 | **settled** |
+| backseat driver | رانندهٔ صندلی عقب | The model's form in 4-08; it wrote «راننده‌ی ناخوانده» (صدای مزاحم درونی) in 4-14 | **settled** |
+| moktak | موک‌تاک | 4-12; the source glosses it itself | **settled** |
+| Gateless Gate | «دروازهٔ بی‌دروازه» | The model's form (4-10); siblings 1 | **settled** |
+| Mu (Chao-chou's answer) | «مو» | Siblings 17; the model's form (4-10) | **settled** |
 | retreat | دورهٔ خلوت‌گزینی (ریتریت) | The model's form (2-04, 2-08); the gloss in parentheses is the model's too, and tolerated | **settled** |
 | prostration(s) | سجده | bow → تعظیم. 2-04 | **settled** |
 | Zen master / teacher | استاد ذن / آموزگار ذن | Zen master settled (1-02); the model also uses استاد for teacher | **settled** |
@@ -131,6 +140,8 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | Kuan Yin | کوان یین | **settled** — Wade-Giles as the source spells it (§4 note; Ikkyu §2.1, Kuang → کوانگ), and the model's form in 3-12. The siblings' گوان‌یین is Record of Linji's Pinyin |
 | Wonhyo | وونهیو | **settled** — the model's form (3-12) |
 | Jon Kabat-Zinn | جان کابات-زین | **settled** — the model's form (3-08) |
+| Pai Chang (Pai-chang) | پای-چانگ | **settled** — siblings 19; the model writes «پای‌چانگ» (4-02) |
+| Chao-chou | چائو-چو | **settled** — siblings 10, and the model's form (4-10) |
 | Dogen | دوگن | proposed — siblings |
 | D. T. Suzuki | دی. تی. سوزوکی | proposed — سوزوکی in Record of Linji |
 
@@ -194,3 +205,8 @@ The model's forms that §3/§4 override. Check each new `fa/` file for them befo
 | خلوت‌نشینی (ریتریت); مراقبه (ریتریت) for retreat | دورهٔ خلوت‌گزینی (ریتریت) |
 | a parenthesis the source does not have: روشنگری (نیروانا)، مراقبه (مدیتیشن)، روشن‌ضمیر (بیدار)، «ذن» (Zen)، (Zazen) | drop it |
 | [bracketed] alternative readings (3-07, 3-09) | pick the one the source means; drop the brackets |
+| رکوع for bow (4-02) | تعظیم; رکوع is Islamic prayer vocabulary (§1) |
+| مدیتیشن — back in 13 of 16 Part Four files, often as «مدیتیشن ذن» / «مدیتیشن نشسته» | مراقبه (مراقبهٔ ذن، مراقبهٔ نشسته) |
+| ذکرخوانی (چنتینگ)، سرودها for chanting | ذکر |
+| تشکچه for cushion | بالشتک |
+| شفاف / شفافیت for "clear mind", "clarity" (Part Four throughout) | روشن / روشنی where the source means the Zen sense of clear; شفاف stays for plain transparency |
