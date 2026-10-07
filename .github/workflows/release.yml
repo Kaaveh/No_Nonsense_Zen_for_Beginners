@@ -1,6 +1,10 @@
-# Pushing a tag renders the book and publishes it as a GitHub release.
-# Adapted from the Ikkyu book's workflow, minus its kaavehdev.ir deploy hook
-# and unversioned asset copies: this book is not on the site.
+# Pushing a tag renders the book and publishes it, here and on kaavehdev.ir.
+#
+# The site's contract is its CLAUDE.md, "Publishing a book": four unversioned
+# assets, a relocatable bundle, the deploy hook last. Its build fetches
+# releases/latest/download/no-nonsense-zen-fa-html.tar.gz and FAILS if the
+# latest release lacks it -- so a release cut by hand with `gh release create`
+# must still carry all eight files below.
 #
 # Bump `book-version` in _quarto.yml before tagging. No release notes are
 # written here; add them with `gh release edit <tag> --notes-file …` once the
@@ -44,10 +48,11 @@ jobs:
           cp _book-mobile/$base-mobile.pdf "dist/$base-$v-mobile.pdf"
           cp _book/$base.epub              "dist/$base-$v.epub"
           tar -czf "dist/$base-$v-html.tar.gz" -C _book .
+          for s in .pdf -mobile.pdf .epub -html.tar.gz; do cp "dist/$base-$v$s" "dist/$base$s"; done
           echo "name=$v — $(sed -n 's/^book-version: "\(.*\)"/\1/p' _quarto.yml)" >> "$GITHUB_OUTPUT"
 
-      # The HTML bundle is meant to be served from any subdirectory, where a
-      # root-absolute path 404s.
+      # kaavehdev.ir serves the bundle from /translations/no-nonsense-zen/,
+      # where a root-absolute path 404s -- silently, and only in production.
       - name: Bundle is relocatable
         run: |
           if grep -rohE '(href|src)="/[^"]*"' _book --include='*.html' | grep -q .; then
@@ -55,7 +60,29 @@ jobs:
             exit 1
           fi
 
+      # Quarto copies a chapter heading verbatim into the sidebar, without the
+      # inline processing the body gets, so a note marker there ships as raw
+      # Markdown on every page.
+      - name: No Markdown leaks into the sidebar
+        run: |
+          if grep -rohE '</a>[^<]*\[\^[^]]*\]\([^)]*\)' _book --include='*.html' | grep -q .; then
+            grep -rohE '</a>[^<]*\[\^[^]]*\]\([^)]*\)' _book --include='*.html' | sort -u | head
+            exit 1
+          fi
+
       - uses: softprops/action-gh-release@v2
         with:
           name: ${{ steps.pkg.outputs.name }}
           files: dist/*
+
+      - name: Rebuild kaavehdev.ir
+        env:
+          HOOK: ${{ secrets.SITE_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "SITE_DEPLOY_HOOK_URL is not set; skipping the site rebuild."
+            exit 0
+          fi
+          response=$(curl -fsS -X POST "$HOOK")
+          echo "$response"
+          echo "$response" | grep -q '"success": *true'
