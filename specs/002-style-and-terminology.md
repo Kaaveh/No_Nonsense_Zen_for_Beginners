@@ -22,7 +22,7 @@ The source is conversational English written for a newcomer: short sentences, se
 |------|-------------------|--------|
 | Answers | Plain written Persian (نوشتاری ساده و روان) — not ornate کتابی, not محاوره | **settled** — the Advanced model's default |
 | Sidebars (first-person stories) | Same written register; the anecdote's tone comes from word choice, not colloquial verb endings | **settled** — 1-04 |
-| Dialogue inside stories and koans | Written register; short and blunt, as in the source. A teacher speaks to a student or a layman with **تو** (بودا to the farmer, بودی‌دارما to هویی-ک’و), as the model renders it | **settled** — 1-03, 1-04 |
+| Dialogue inside stories and koans | Written register; short and blunt, as in the source. A teacher speaks to a student or a layman with **تو** (بودا to the farmer, بودی‌دارما to هویی‌کو), as the model renders it | **settled** — 1-03, 1-04 |
 | Quoted verse and sutra lines | Measured, short lines; keep the source's line breaks | **settled** — 1-03, 1-05 |
 
 - Address to the reader: **شما** throughout, sidebars included. **Settled** — the sidebars are the author's first-person stories, not addressed to the reader, so there is nothing to soften; تو lives only inside dialogue.
@@ -61,7 +61,7 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | Buddhism / Buddhist | بودیسم / بودایی | Siblings 184 : 43 over آیین بودا; the model's form | **settled** |
 | dharma | دارما | Lower-case "the teaching" sense vs. capital "Dharma": same word. Ikkyu §2.7 | **settled** |
 | sangha | سانگا | Siblings 15 : 1 over سنگه; the model's form (3-01) | **settled** |
-| zazen | زازن | "just sitting" → «فقط نشستن» (proposed). 1-07 | **settled** |
+| zazen | ذاذن | Maintainer's choice, replacing زازن. "just sitting" → «فقط نشستن» (proposed). 1-07 | **settled** |
 | meditation | مراقبه | 111× in the source, the book's commonest term. Siblings 211; the model's form | **settled** |
 | sitting Zen / sitting meditation | نشستن به مراقبهٔ ذن / مراقبهٔ نشسته | sitting Zen settled (2-15): "we sit Zen" → به مراقبهٔ ذن می‌نشینیم. The model writes «نشستن در ذن (مدیتیشن ذن)». sitting meditation settled (4-01, 4-13); the model writes «مدیتیشن نشسته» | **settled** |
 | enlightenment | روشنگری | Siblings 257 : 38 over روشن‌شدگی, and the model's form. Replaces the earlier روشن‌شدگی. Avoid اشراق (Suhrawardi connotation); the model slipped once, in 1-03 | **settled** |
@@ -74,9 +74,10 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | impermanence | ناپایداری | The model's form (2-05) | **settled** |
 | suffering | رنج | 1-01, 1-02 | **settled** |
 | desire / attachment | میل / دلبستگی | attachment settled (1-02, 1-05). desire → میل, the model's form throughout 3-10, replacing the proposed خواهش (siblings: Ikkyu's poems only). aspiration → آرمان (3-10) | **settled** |
-| ego | «من» (ایگو) | The source glosses ego as "what we call 'I' or 'me'" (2-10); the model's form. The gloss is tolerated on any use | **settled** |
+| ego | «من» (ایگو) | The source glosses ego as "what we call 'I' or 'me'" (2-10); the model's form. The gloss only on first use in the book (1-12), §4 | **settled** |
+| Hui-k’o's dialogue with Bodhidharma (1-03) | «ذهنم آرام نیست. استاد، تمنا دارم…» / «…یافتنی نیست.» | Maintainer's revision toward the Chinese (無門關 41): 心未安 → آرام نیست, keeping the 安 echo through all four lines and keeping 苦 (رنج) out; 乞 → تمنا دارم; 了不可得 → یافتنی نیست, the 不可得 of the Diamond Sutra, not a failed search (نمی‌یابم) | **settled** |
 | dualistic thinking | تفکر دوگانه | The source says thinking, not mind; the model's form (2-05, 2-06). Drop the parenthetical glosses it adds (ثنویت‌گرا، دوتایی) | **settled** |
-| beginner's mind | ذهن مبتدی | The model's form (2-02, 2-03); siblings 1, replacing ذهن نوآموز | **settled** |
+| beginner's mind | ذهن آغازگر | Maintainer's choice, matching «ذهن ذن، ذهن آغازگر» (1-08); replaces the model's ذهن مبتدی and the earlier ذهن نوآموز | **settled** |
 | "don't know" mind | ذهنِ «نمی‌دانم» | Kwan Um key term; the guillemets go round «نمی‌دانم» only. "don't know" alone → «نمی‌دانم». The model writes five forms in one part (§7) | **settled** |
 | Great Doubt / Great Faith / Great Courage | شک بزرگ / ایمان بزرگ / شجاعت بزرگ | "Great" as in چهار عهد بزرگ. Only in 3-01. The model writes «شکِ عظیم» | **settled** |
 | Four Noble Truths / eightfold path | چهار حقیقت شریف / راه هشت‌گانه | Siblings; the model's forms (3-02) | **settled** |
@@ -102,7 +103,7 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | moktak | موک‌تاک | 4-12; the source glosses it itself | **settled** |
 | Gateless Gate | «دروازهٔ بی‌دروازه» | The model's form (4-10); siblings 1 | **settled** |
 | Mu (Chao-chou's answer) | «مو» | Siblings 17; the model's form (4-10) | **settled** |
-| retreat | دورهٔ خلوت‌گزینی (ریتریت) | The model's form (2-04, 2-08); the gloss in parentheses is the model's too, and tolerated | **settled** |
+| retreat | دورهٔ خلوت‌گزینی (ریتریت) | The model's form (2-04, 2-08); the gloss only on first use in the book (introduction), §4 | **settled** |
 | prostration(s) | سجده | bow → تعظیم. 2-04 | **settled** |
 | Zen master / teacher | استاد ذن / آموزگار ذن | Zen master settled (1-02); the model also uses استاد for teacher | **settled** |
 | patriarch | پاتریارک | first / second / sixth patriarch → نخستین / دومین / ششمین پاتریارک. Siblings 272; replaces the earlier «نیای ششم». The model adds a gloss in parentheses (پیشوای ارشد / معنوی) and sometimes uses پیشوا alone; the gloss is tolerated, پیشوا alone is fixed | **settled** |
@@ -124,7 +125,7 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 |---------|------------------|--------|
 | Bodhidharma | بودی‌دارما | **settled** — siblings 72 : 29. **The model writes بودیدهارما — fix by hand** (all 20 occurrences are in the pilot) |
 | Hui-neng | هویی-ننگ | **settled** — Ikkyu §2.8 — the kasre goes, the hyphen stays |
-| Hui-k’o | هویی-ک’و | **settled** — Ikkyu §2.2. The model wrote three forms in one file |
+| Hui-k’o | هویی‌کو | **settled** — maintainer's choice, overriding Ikkyu §2.2's هویی-ک’و: the Wade-Giles ’ only marks aspiration and means nothing in Persian script, and the hyphen becomes a ZWNJ. The Latin gloss keeps Hui-k’o |
 | Shen-hsiu | شن-شیو | **settled** — model writes شِن‌شیو |
 | Lin-chi | لین-چی | **settled** — Ikkyu's form; Record of Linji's لینجی is Pinyin. Model writes لین‌چی |
 | Huai-jang | هوآی-جانگ | **settled** — Lin-chi's form; model writes هوآی‌جانگ |
@@ -153,9 +154,10 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | Thubten Chodron | توبتن (چودرون) | **settled** — the model's form; the author line itself stays in English (spec 007) |
 | Dogen | دوگن | proposed — siblings |
 | D. T. Suzuki | دی. تی. سوزوکی | proposed — سوزوکی in Record of Linji |
+| *Zen Mind, Beginner's Mind* (Shunryu Suzuki) | «ذهن ذن، ذهن آغازگر» | **settled** — maintainer's choice (1-08) |
 
 - The source is Wade-Giles (Hui-k’o, Lin-chi, Ma-tzu, Chao-chou). Transliterate by Ikkyu `STYLE.md` §2.1–§2.3: never from Pinyin, the hyphen stays, the `’` is carried inside the Persian word, no kasre. A name already in Ikkyu §2.8 (Te-shan, Chao-chou, Wu-men, Huang-po …) takes that form. Ma-tzu is Ma-tsu: ما-تسو, as the siblings write it.
-- Latin form in parentheses on first occurrence: **tolerated, not required.** The model adds it on its own often (1-05 on every name, 1-04 even on «ذن (Zen)» twice) and not at all elsewhere (1-03). Enforcing it by hand in 60 files buys little; like Ikkyu §2.6, this is accepted variation.
+- English form in parentheses: **settled — first occurrence in the book only** (maintainer's rule). A name or term that carries an English gloss gets it on its first mention in book order (introduction onward; the copyright page and dedication do not count), and nowhere after. This covers transliterated glosses too: (ریتریت), (ایگو). A gloss the model puts on a later mention moves to the first one. Two parentheses in a row merge: «کوآن» (koan، …).
 - Book titles in Resources and References stay in English; see spec 007.
 
 ---
@@ -208,10 +210,11 @@ The model's forms that §3/§4 override. Check each new `fa/` file for them befo
 | در آیین بودا | در بودیسم |
 | مرکز ذن «پراویدنس» (Providence) | مرکز ذن پراویدنس |
 | straight "…" quotes inside a Persian sentence | «…» (nested inside «…» when quoted) |
-| ایگو، منیت، «ایگو» (منیت) | «من» (ایگو) on first use, «من» after (2-15's pattern) |
+| ایگو، منیت، «ایگو» (منیت) | «من» (ایگو) on first use in the book (1-12), «من» after |
 | «شکِ عظیم»، «ایمانِ عظیم»، «شجاعتِ عظیم» | شک / ایمان / شجاعت بزرگ |
 | هنرجو for a Zen student | شاگرد |
 | خلوت‌نشینی (ریتریت); مراقبه (ریتریت) for retreat | دورهٔ خلوت‌گزینی (ریتریت) |
+| an English gloss after its first occurrence in the book (§4) | drop it |
 | a parenthesis the source does not have: روشنگری (نیروانا)، مراقبه (مدیتیشن)، روشن‌ضمیر (بیدار)، «ذن» (Zen)، (Zazen) | drop it |
 | [bracketed] alternative readings (3-07, 3-09) | pick the one the source means; drop the brackets |
 | رکوع for bow (4-02) | تعظیم; رکوع is Islamic prayer vocabulary (§1) |

@@ -4,7 +4,7 @@
 # Title and subtitle: spec 002 §2. The chapter list mirrors source/README.md;
 # if the split ever changes, regenerate both together.
 
-book-version: "نسخهٔ ۱.۰.۰"
+book-version: "نسخهٔ ۱.۱.۰"
 
 project:
   type: book
