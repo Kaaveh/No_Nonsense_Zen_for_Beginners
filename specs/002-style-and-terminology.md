@@ -157,7 +157,7 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | *Zen Mind, Beginner's Mind* (Shunryu Suzuki) | «ذهن ذن، ذهن آغازگر» | **settled** — maintainer's choice (1-08) |
 
 - The source is Wade-Giles (Hui-k’o, Lin-chi, Ma-tzu, Chao-chou). Transliterate by Ikkyu `STYLE.md` §2.1–§2.3: never from Pinyin, the hyphen stays, the `’` is carried inside the Persian word, no kasre. A name already in Ikkyu §2.8 (Te-shan, Chao-chou, Wu-men, Huang-po …) takes that form. Ma-tzu is Ma-tsu: ما-تسو, as the siblings write it.
-- English form in parentheses: **settled — first occurrence in the book only** (maintainer's rule). A name or term that carries an English gloss gets it on its first mention in book order (introduction onward; the copyright page and dedication do not count), and nowhere after. This covers transliterated glosses too: (ریتریت), (ایگو). A gloss the model puts on a later mention moves to the first one. Two parentheses in a row merge: «کوآن» (koan؛ …).
+- English form in parentheses: **settled — first occurrence in the book only** (maintainer's rule). A name or term that carries an English gloss gets it on its first mention in book order (introduction onward; the copyright page and dedication do not count), and nowhere after. This covers transliterated glosses too: (ریتریت), (ایگو). A gloss the model puts on a later mention moves to the first one. Two parentheses in a row merge: «کوآن» (koan، …).
 - Book titles in Resources and References stay in English; see spec 007.
 
 ---
