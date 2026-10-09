@@ -76,7 +76,7 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | desire / attachment | میل / دلبستگی | attachment settled (1-02, 1-05). desire → میل, the model's form throughout 3-10, replacing the proposed خواهش (siblings: Ikkyu's poems only). aspiration → آرمان (3-10) | **settled** |
 | ego | «من» (ایگو) | The source glosses ego as "what we call 'I' or 'me'" (2-10); the model's form. The gloss only on first use in the book (1-12), §4 | **settled** |
 | dualistic thinking | تفکر دوگانه | The source says thinking, not mind; the model's form (2-05, 2-06). Drop the parenthetical glosses it adds (ثنویت‌گرا، دوتایی) | **settled** |
-| beginner's mind | ذهن مبتدی | The model's form (2-02, 2-03); siblings 1, replacing ذهن نوآموز | **settled** |
+| beginner's mind | ذهن آغازگر | Maintainer's choice, matching «ذهن ذن، ذهن آغازگر» (1-08); replaces the model's ذهن مبتدی and the earlier ذهن نوآموز | **settled** |
 | "don't know" mind | ذهنِ «نمی‌دانم» | Kwan Um key term; the guillemets go round «نمی‌دانم» only. "don't know" alone → «نمی‌دانم». The model writes five forms in one part (§7) | **settled** |
 | Great Doubt / Great Faith / Great Courage | شک بزرگ / ایمان بزرگ / شجاعت بزرگ | "Great" as in چهار عهد بزرگ. Only in 3-01. The model writes «شکِ عظیم» | **settled** |
 | Four Noble Truths / eightfold path | چهار حقیقت شریف / راه هشت‌گانه | Siblings; the model's forms (3-02) | **settled** |
