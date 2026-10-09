@@ -22,7 +22,7 @@ The source is conversational English written for a newcomer: short sentences, se
 |------|-------------------|--------|
 | Answers | Plain written Persian (نوشتاری ساده و روان) — not ornate کتابی, not محاوره | **settled** — the Advanced model's default |
 | Sidebars (first-person stories) | Same written register; the anecdote's tone comes from word choice, not colloquial verb endings | **settled** — 1-04 |
-| Dialogue inside stories and koans | Written register; short and blunt, as in the source. A teacher speaks to a student or a layman with **تو** (بودا to the farmer, بودی‌دارما to هویی-ک’و), as the model renders it | **settled** — 1-03, 1-04 |
+| Dialogue inside stories and koans | Written register; short and blunt, as in the source. A teacher speaks to a student or a layman with **تو** (بودا to the farmer, بودی‌دارما to هویی‌کو), as the model renders it | **settled** — 1-03, 1-04 |
 | Quoted verse and sutra lines | Measured, short lines; keep the source's line breaks | **settled** — 1-03, 1-05 |
 
 - Address to the reader: **شما** throughout, sidebars included. **Settled** — the sidebars are the author's first-person stories, not addressed to the reader, so there is nothing to soften; تو lives only inside dialogue.
@@ -75,6 +75,7 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | suffering | رنج | 1-01, 1-02 | **settled** |
 | desire / attachment | میل / دلبستگی | attachment settled (1-02, 1-05). desire → میل, the model's form throughout 3-10, replacing the proposed خواهش (siblings: Ikkyu's poems only). aspiration → آرمان (3-10) | **settled** |
 | ego | «من» (ایگو) | The source glosses ego as "what we call 'I' or 'me'" (2-10); the model's form. The gloss only on first use in the book (1-12), §4 | **settled** |
+| Hui-k’o's dialogue with Bodhidharma (1-03) | «ذهنم آرام نیست. استاد، تمنا دارم…» / «…یافتنی نیست.» | Maintainer's revision toward the Chinese (無門關 41): 心未安 → آرام نیست, keeping the 安 echo through all four lines and keeping 苦 (رنج) out; 乞 → تمنا دارم; 了不可得 → یافتنی نیست, the 不可得 of the Diamond Sutra, not a failed search (نمی‌یابم) | **settled** |
 | dualistic thinking | تفکر دوگانه | The source says thinking, not mind; the model's form (2-05, 2-06). Drop the parenthetical glosses it adds (ثنویت‌گرا، دوتایی) | **settled** |
 | beginner's mind | ذهن آغازگر | Maintainer's choice, matching «ذهن ذن، ذهن آغازگر» (1-08); replaces the model's ذهن مبتدی and the earlier ذهن نوآموز | **settled** |
 | "don't know" mind | ذهنِ «نمی‌دانم» | Kwan Um key term; the guillemets go round «نمی‌دانم» only. "don't know" alone → «نمی‌دانم». The model writes five forms in one part (§7) | **settled** |
@@ -124,7 +125,7 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 |---------|------------------|--------|
 | Bodhidharma | بودی‌دارما | **settled** — siblings 72 : 29. **The model writes بودیدهارما — fix by hand** (all 20 occurrences are in the pilot) |
 | Hui-neng | هویی-ننگ | **settled** — Ikkyu §2.8 — the kasre goes, the hyphen stays |
-| Hui-k’o | هویی-ک’و | **settled** — Ikkyu §2.2. The model wrote three forms in one file |
+| Hui-k’o | هویی‌کو | **settled** — maintainer's choice, overriding Ikkyu §2.2's هویی-ک’و: the Wade-Giles ’ only marks aspiration and means nothing in Persian script, and the hyphen becomes a ZWNJ. The Latin gloss keeps Hui-k’o |
 | Shen-hsiu | شن-شیو | **settled** — model writes شِن‌شیو |
 | Lin-chi | لین-چی | **settled** — Ikkyu's form; Record of Linji's لینجی is Pinyin. Model writes لین‌چی |
 | Huai-jang | هوآی-جانگ | **settled** — Lin-chi's form; model writes هوآی‌جانگ |
