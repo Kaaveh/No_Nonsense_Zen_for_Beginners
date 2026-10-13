@@ -108,7 +108,7 @@ Headings keep sentence case in Persian; the source's ALL CAPS is typographic, no
 | Zen master / teacher | استاد ذن / آموزگار ذن | Zen master settled (1-02); the model also uses استاد for teacher | **settled** |
 | patriarch | پاتریارک | first / second / sixth patriarch → نخستین / دومین / ششمین پاتریارک. Siblings 272; replaces the earlier «نیای ششم». The model adds a gloss in parentheses (پیشوای ارشد / معنوی) and sometimes uses پیشوا alone; the gloss is tolerated, پیشوا alone is fixed | **settled** |
 | student | شاگرد | The model's usual form; دانش‌آموز only for a schoolchild (1-11's classroom game) | **settled** |
-| Blue Cliff Record | «دفتر صخره‌ی کبود» | Maintainer's choice; replaces Ikkyu's and the model's «سوابق صخره آبی» (1-06, 4-10) | **settled** |
+| Blue Cliff Record | «دفتر صخرهٔ کبود» | Maintainer's choice, for the series; Ikkyu's STYLE.md §2.8 now has it too. Replaces the model's «سوابق صخره آبی» (1-06, 4-10) | **settled** |
 | transmission | انتقال (دارما) | dharma transmission → انتقال دارما; mind-to-mind → ذهن‌به‌ذهن | **settled** |
 | enlightened nature | ماهیت روشن‌یافته | ~30× in the source. original enlightened nature → ماهیت اصیل و روشن‌یافته. The model wrote nine variants across Parts One and Two (سرشت / طبیعت × روشن‌بینانه / روشن‌ضمیر / روشنگر); Part One revised to match. Not "nature of enlightenment" (1-05: ماهیت روشنگری, correct there) | **settled** |
 | Tao Te Ching | «دائو ته چینگ» | Siblings 33 : 7; the model writes «تائو ته چینگ» | **settled** |
